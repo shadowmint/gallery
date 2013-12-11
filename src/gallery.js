@@ -67,7 +67,7 @@
             cache_size: 10,
             grid_selector: '.gallery-items',
             grid_item_selector: '.gallery-item',
-            image_selector: '.image-zoom',
+            grid_image_selector: '.gallery-image',
             image_zoomed: 'image-zoomed',
             state_zoom: 'state-zoom',
             state_inactive: 'state-inactive'
@@ -96,7 +96,7 @@
 
         // Attach picture zooming functionality
         var gallery = this;
-        $(root).find(this.options.image_selector).each(function (i, e) {
+        $(root).find(this.options.grid_image_selector).each(function (i, e) {
             gallery._pictureZoom(e);
         });
 

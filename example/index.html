@@ -25,73 +25,73 @@
                 <div class="gallery">
                     <ul class="gallery-items">
                         <li class="gallery-item">
-                            <a class="image-zoom" href="#">
+                            <a class="gallery-image" href="#">
                                 <img data-highres-image="img/1.jpg" alt="..." src="img/1.min.jpg"/>
                                 <span class="image-zoom-close">Close</span>
                             </a>
                         </li>
                         <li class="gallery-item">
-                            <a class="image-zoom" href="#">
+                            <a class="gallery-image" href="#">
                                 <img data-highres-image="img/2.jpg" alt="..." src="img/2.min.jpg"/>
                                 <span class="image-zoom-close">Close</span>
                             </a>
                         </li>
                         <li class="gallery-item">
-                            <a class="image-zoom" href="#">
+                            <a class="gallery-image" href="#">
                                 <img data-highres-image="img/3.jpg" alt="..." src="img/3.min.jpg"/>
                                 <span class="image-zoom-close">Close</span>
                             </a>
                         </li>
                         <li class="gallery-item">
-                            <a class="image-zoom" href="#">
+                            <a class="gallery-image" href="#">
                                 <img data-highres-image="img/4.jpg" alt="..." src="img/4.min.jpg"/>
                                 <span class="image-zoom-close">Close</span>
                             </a>
                         </li>
                         <li class="gallery-item">
-                            <a class="image-zoom" href="#">
+                            <a class="gallery-image" href="#">
                                 <img data-highres-image="img/5.jpg" alt="..." src="img/5.min.jpg"/>
                                 <span class="image-zoom-close">Close</span>
                             </a>
                         </li>
                         <li class="gallery-item">
-                            <a class="image-zoom" href="#">
+                            <a class="gallery-image" href="#">
                                 <img data-highres-image="img/6.jpg" alt="..." src="img/6.min.jpg"/>
                                 <span class="image-zoom-close">Close</span>
                             </a>
                         </li>
                         <li class="gallery-item">
-                            <a class="image-zoom" href="#">
+                            <a class="gallery-image" href="#">
                                 <img data-highres-image="img/7.jpg" alt="..." src="img/7.min.jpg"/>
                                 <span class="image-zoom-close">Close</span>
                             </a>
                         </li>
                         <li class="gallery-item">
-                            <a class="image-zoom" href="#">
+                            <a class="gallery-image" href="#">
                                 <img data-highres-image="img/8.jpg" alt="..." src="img/8.min.jpg"/>
                                 <span class="image-zoom-close">Close</span>
                             </a>
                         </li>
                         <li class="gallery-item">
-                            <a class="image-zoom" href="#">
+                            <a class="gallery-image" href="#">
                                 <img data-highres-image="img/9.jpg" alt="..." src="img/9.min.jpg"/>
                                 <span class="image-zoom-close">Close</span>
                             </a>
                         </li>
                         <li class="gallery-item">
-                            <a class="image-zoom" href="#">
+                            <a class="gallery-image" href="#">
                                 <img data-highres-image="img/10.jpg" alt="..." src="img/10.min.jpg"/>
                                 <span class="image-zoom-close">Close</span>
                             </a>
                         </li>
                         <li class="gallery-item">
-                            <a class="image-zoom" href="#">
+                            <a class="gallery-image" href="#">
                                 <img data-highres-image="img/11.jpg" alt="..." src="img/11.min.jpg"/>
                                 <span class="image-zoom-close">Close</span>
                             </a>
                         </li>
                         <li class="gallery-item">
-                            <a class="image-zoom" href="#">
+                            <a class="gallery-image" href="#">
                                 <img data-highres-image="img/12.jpg" alt="..." src="img/12.min.jpg"/>
                                 <span class="image-zoom-close">Close</span>
                             </a>
@@ -101,10 +101,14 @@
                 </div>
 
                 <script src="../libs/jquery/jquery.js"></script>
-                <script src="../src/gallery.js"></script>
+                <script src="../dist/gallery.min.js"></script>
                 <script type="text/javascript">
                     $(function () {
-                        $('.gallery').gallery({grid_selector: '.gallery-items'});
+                        $('.gallery').gallery({
+                            grid_selector: '.gallery-items',
+                            grid_item_selector: '.gallery-item',
+                            grid_image_selector: '.gallery-image'
+                        });
                     });
                 </script>
             </section>
