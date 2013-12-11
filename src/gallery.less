@@ -1,0 +1,101 @@
+/*!
+
+Author: Hatchd Digital - Perth, Western Australia
+Website: http://hatcd.com.au/
+Code: http://github.com/hatchddigital/hatchling.slide
+
+......MMM...........................................MM ................MMM.....
+......MMM.......................MM .................MM.................MMM.....
+......MMM.......................MM..................MM.................MMM.....
+......MMMMMMMM..... MMMMMM......MMMMMM....8MMMMM,...MM:MMMMN..... MMMMMMMM.....
+......MMMMMMMMM ...$MMMMMMM8....MMMMMM...MMMMMMM7...MMMMMMMMM... MMMMMMMMM.....
+......MMM... MM..........MMM....MMN..... MMM........MM....MMM...,MM....MMM.....
+......MMM... MM.....MMMMMMMM....MMN......MM.........MM....MMM...MMM....MMM.....
+......MMM... MM....MMM.::MMM....MMN......MM ........MM....MMM...MMM....MMM.....
+......MMM... MM....MMZ...MMM....MMN..... MM?........MM....MMM...=MM....MMM.....
+......MMM... MM....MMM. MMMM....MMM,.~ . MMMD.,$=...MM....MMM....MMM:,MMMI.....
+......MMM... MM....:MMMMM:MM....ZMMMMM....MMMMMM7...MM....MMM.... MMMMMMD......
+
+*/
+
+// Sample gallery css
+.gallery {
+
+  // The grid of elements requires a fixed width
+  .gallery-items {
+    max-width: 800px;
+    width: 100%;
+    border: 2px solid #efefef;
+  }
+
+  // When the popup is displayed marker the others as inactive
+  .state-inactive {
+    .gallery-item {
+      opacity: 0.5;
+    }
+    .state-zoom {
+      opacity: 1.0 !important;
+      overflow: visible !important;
+    }
+  }
+
+  .gallery-item {
+    display: block;
+    float: left;
+    width: 33%;
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+    a {
+      line-height: 0px;
+    }
+  }
+
+  // Dont display the close button normally
+  .image-zoom-close {
+    display: none;
+    border: 2px solid #004ab3;
+    padding: 8px;
+    margin: 0px;
+    position: relative;
+    top: -50px;
+    left: 5px;
+    height: 20px;
+    background: #fff;
+    width: 100px;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  // Fixed full size style for both zoomed and non-zoomed items
+  .image-zoomed {
+    width: 100%;
+    max-width: 512px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  // Zoomed view
+  .state-zoom {
+    position: absolute;
+    background: #fff;
+    left: 0px;
+    height: 0px;
+
+    // Display close button when zoomed
+    .image-zoom-close {
+      display: block;
+    }
+  }
+
+  // Generic block styles
+  li {
+    list-style: none outside none;
+  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+}

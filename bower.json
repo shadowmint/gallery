@@ -1,0 +1,7 @@
+{
+    "name": "slide",
+    "version": "0.2.4",
+    "dependencies": {
+        "jquery": ">1.7.x"
+    }
+}
