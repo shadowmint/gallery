@@ -11,7 +11,6 @@ Download the [production version][min] or the [development version][max].
 
 In your web page:
 
-
 ```html
 <script src="libs/jquery/jquery.js"></script>
 <script src="dist/gallery.min.js"></script>
@@ -23,7 +22,7 @@ In your web page:
 </script>
 ```
 
-It might be helpful to have a look at the [live example] of the gallery in action.
+It might be helpful to have a look at the [live example][live] of the gallery in action.
 
 [live]: http://shadowmint.github.io/gallery/index.html
 
