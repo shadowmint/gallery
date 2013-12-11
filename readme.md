@@ -23,6 +23,10 @@ In your web page:
 </script>
 ```
 
+It might be helpful to have a look at the [live example] of the gallery in action.
+
+[live]: http://shadowmint.github.io/gallery/index.html
+
 ## Usage
 
 To have this work on your site we require specific CSS and markup requirements
